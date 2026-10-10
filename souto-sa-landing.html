@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOUTO S.A. — Construcción, Diseño y Dirección de Obra desde 1955</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0B2C34">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -720,7 +728,7 @@
     <div class="clients-head">
       <div class="kicker">Respaldo y confianza</div>
       <h2>Clientes de Souto SA</h2>
-      <p>Empresas, desarrolladores e instituciones que confiaron su obra a más de 60 años de trayectoria técnica.</p>
+      <p>Empresas, desarrolladores e instituciones que confiaron su obra a más de 30 años de trayectoria técnica.</p>
     </div>
     <div class="trust-names">
       <span>Nordelta S.A.</span><span>Consultatio S.A.</span><span>Pulte Homes</span><span>Mitsubishi Corporation Argentina</span>
@@ -776,8 +784,8 @@
         </div>
         <div class="field"><label for="fmsg">Mensaje</label><textarea id="fmsg" required></textarea></div>
         <div class="field" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
-          <label for="fwebsite">No completar</label>
-          <input id="fwebsite" name="fwebsite" type="text" tabindex="-1" autocomplete="off">
+          <label for="hp_contact_ref">No completar</label>
+          <input id="hp_contact_ref" name="hp_contact_ref" type="text" tabindex="-1" autocomplete="off">
         </div>
         <div>
           <button type="submit" class="btn" id="submitBtn">Enviar consulta</button>
@@ -907,7 +915,7 @@
     errorEl.classList.remove('show');
 
     // Honeypot: if this hidden field is filled, silently treat as spam.
-    if (document.getElementById('fwebsite').value) {
+    if (document.getElementById('hp_contact_ref').value) {
       form.reset();
       successEl.classList.add('show');
       return;
